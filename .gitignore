@@ -1,0 +1,29 @@
+# Environment variables (contains secrets)
+.env
+server/.env
+ml-service/.env
+
+# Node.js
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Python
+ml-service/venv/
+ml-service/__pycache__/
+*.pyc
+*.pyo
+
+# ML model artifacts
+ml-service/models/*.pkl
+ml-service/models/*.joblib
+# Also ignore a stale model at the root (pre-refactor)
+ml-service/sales_model.pkl
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
